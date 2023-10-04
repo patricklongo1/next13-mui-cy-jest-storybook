@@ -4,12 +4,8 @@ import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
+import { handleCancel, handleSubmit } from './functions/mediaCardFunctions'
 
-/**
- * Componente de cartão de mídia.
- *
- * Este componente exibe uma imagem, um título e um texto descritivo.
- */
 interface MediaCardProps {
   /**
    * O titulo do cartão de mídia.
@@ -23,22 +19,13 @@ interface MediaCardProps {
 }
 
 /**
- * Componente de cartão de mídia.
- *
- * Este componente exibe uma imagem, um título e um texto descritivo.
- *
- * handleClick(value: string) {}: void --------- Essa função é chamada quando o usuário clicar em um dos dois botões do card)
- *
- *
+ *  MediaCard eh o meu component top huasuhsahuasuhashuasuhasuhasuhasuhashu
+ * MediaCard eh o meu component top huasuhsahuasuhashuasuhasuhasuhasuhashu
+ * MediaCard eh o meu component top huasuhsahuasuhashuasuhasuhasuhasuhashu
+ * MediaCard eh o meu component top huasuhsahuasuhashuasuhasuhasuhasuhashu
+ * MediaCard eh o meu component top huasuhsahuasuhashuasuhasuhasuhasuhashu
  */
 export default function MediaCard({ heading, text }: MediaCardProps) {
-  /**
-   * Essa função é chamada quando o usuário clicar em um dos dois botões do card
-   */
-  function handleClick(value: string) {
-    console.log('Logar isso quando o usuári clicar', value)
-  }
-
   return (
     <Card>
       <Image
@@ -61,8 +48,12 @@ export default function MediaCard({ heading, text }: MediaCardProps) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button onClick={() => handleSubmit('enviando')} size="small">
+          Submit
+        </Button>
+        <Button onClick={handleCancel} size="small">
+          Cancel
+        </Button>
       </CardActions>
     </Card>
   )

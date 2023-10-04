@@ -18,8 +18,13 @@ interface MediaCardProps {
 
 const Template: StoryFn<MediaCardProps> = (args) => <MediaCard {...args} />
 
-export const Default = Template.bind({})
-Default.args = {
+export const Full = Template.bind({})
+Full.args = {
   heading: 'Title',
+  text: 'Your best description here',
+}
+
+export const WithoutTitle = Template.bind({})
+WithoutTitle.args = {
   text: 'Your best description here',
 }

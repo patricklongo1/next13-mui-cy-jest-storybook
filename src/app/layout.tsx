@@ -21,8 +21,8 @@ import ThemeRegistry from '@/components/ThemeRegistry/ThemeRegistry'
 import QueryProvider from './lib/queryProvider'
 
 export const metadata = {
-  title: 'Next.js App Router + Material UI v5',
-  description: 'Next.js App Router + Material UI v5',
+  title: 'Workbench',
+  description: 'Workbench APP',
 }
 
 const DRAWER_WIDTH = 240
