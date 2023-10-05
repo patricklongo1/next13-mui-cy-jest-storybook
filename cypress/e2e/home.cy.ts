@@ -1,10 +1,7 @@
-// cypress/integration/form.spec.js
-describe('should send form with valid data', () => {
-  /* beforeEach(() => {
-    cy.visit('/schedule')
-  }) */
+/// <reference types="cypress" />
 
-  it('should fill the form and submit', () => {
+describe('should access home', () => {
+  it('should access homepage "/"', () => {
     cy.visit('/')
   })
 })
